@@ -1,0 +1,88 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                     cow_02.jpg  label:                        cow
+ 2 key:          boston_terrier_09.jpg  label:             boston terrier
+ 3 key:        golden_retriever_02.jpg  label:           golden retriever
+ 4 key:                  beagle_09.jpg  label:                     beagle
+ 5 key:                   rock_09.jpeg  label:                       rock
+ 6 key:                    frog_01.jpg  label:                       frog
+
+     MATCH:
+
+         boston_terrier_09.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+       golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+                 beagle_09.jpg: 
+Real:                     beagle   Classifier:                         beagle
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+ NOT A MATCH:
+
+                    cow_02.jpg: 
+Real:                        cow   Classifier:                             ox
+
+                  rock_09.jpeg: 
+Real:                       rock   Classifier:                           nail
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+     MATCH:
+
+         boston_terrier_09.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+       golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 beagle_09.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    cow_02.jpg: 
+Real:                        cow   Classifier:                             ox  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  rock_09.jpeg: 
+Real:                       rock   Classifier:                           nail  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  3  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  3  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   6
+N Dog Images        :   3
+N Not-Dog Images    :   3
+ 
+pct_match: 66.7
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 100.0
+
+** Total Elapsed Runtime: 0:0:5
